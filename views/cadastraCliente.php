@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <a href="../index.php" class="home-button">🏠</a>
+
+    <h2>Cadastro de Clientes:</h2>
+    <form id="cadastroForm" action="../services/processaCadastroCliente.php" method="post">
+        <label>Nome:</label>
+        <input type="text" name="nome" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Idade:</label>
+        <input type="text" name="idade" required>
+       
+
+        <button type="submit">Cadastra Cliente</button>
+    </form>
+     <a href="indexCliente.php" class="button">Ver Lista de Clientes</a>
+</body>
+</html>
